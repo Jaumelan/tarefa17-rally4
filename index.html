@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-pop-up-bottom">Rally</h1>
+        
+    </header>
+    <main>
+        <section>
+            <h2>Escolha a Corrida e veja quem Ganha</h2>
+            <div id="buttons">
+                <button class="vibrate-1" type="button" onclick="corridas(9);">Corrida Rápida</button>
+                <button class="vibrate-1" type="button" onclick="corridas(59);">Grande Prêmio</button>
+                <button class="vibrate-1" type="button" onclick="corridas(159);">Enduro</button>
+            </div>
+            <div id="resultado">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="theader">Pódio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="titles">Primeiro Lugar</td>
+                            <td id="first" class="results"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles">Segundo Lugar</td>
+                            <td id="second" class="results"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles">Terceiro Lugar</td>
+                            <td id="third" class="results"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="theader">Nível dos Corredores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="titles">Pedro</td>
+                            <td id="pedroLevel" class="results"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles">Juca</td>
+                            <td id="jucaLevel" class="results"></td>
+                        </tr>
+                        <tr>
+                            <td class="titles">Edna</td>
+                            <td id="ednaLevel" class="results"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <button type="button" onclick="upar();">Aumentar de nível</button>
+       
+    </main>
+    <script src="rally.js" defer></script>
+    
+</body>
+</html>
